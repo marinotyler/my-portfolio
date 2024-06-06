@@ -19,10 +19,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div>
-          <ModeToggle/>
-        </div>
-        <ThemeProvider>
+        
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+          >
+          <div>
+            <ModeToggle/>
+          </div>
           {children}
         </ThemeProvider>
         </body>

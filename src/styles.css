@@ -1,0 +1,67 @@
+@font-face{
+    font-family: "Glitch Goblin";
+    src: url("GlitchGoblin-2O87v.ttf")
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: greenyellow;
+    font-family: "Glitch Goblin";
+}
+.container {
+    width: 100vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    transition: 0.3s ease-in-out; 
+}
+.project-container {
+    border: 2px solid;
+    border-color: lightgreen;
+    border-radius: 15px;
+    height: 300px;
+    position: relative
+
+}
+
+.project-header{
+    border: 1px solid greenyellow;
+    border-radius: 15px;
+    background-color: #333;
+    margin: 0px;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+    width: 100%
+}
+.project-link-icon{
+    color: white;
+    text-align: center;
+    justify-content: start;
+    margin: 10px;
+}
+
+.project-link-icon:hover{
+    transform: scale(1.5);
+    filter: brightness(200%)
+}
+
+
+@media screen and (min-width:0px) and (max-width: 699) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-header{
+        width:200px 
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width:100%){ 
+    .container {
+        grid-template-columns: 1fr 1fr;
+        width: 100%
+    }
+}
