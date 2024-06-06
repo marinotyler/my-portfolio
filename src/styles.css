@@ -17,30 +17,35 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     transition: 0.3s ease-in-out; 
+    display: grid;
+    gap: 5;
 }
 .project-container {
     border: 2px solid;
     border-color: lightgreen;
-    border-radius: 15px;
+    border-radius: 10px;
+    background-color: black;
     height: 300px;
-    position: relative
-
+    position: relative;
+    display: block;
+    margin: 5px;
 }
 
-.project-header{
+.project-card{
+    color: greenyellow;
     border: 1px solid greenyellow;
-    border-radius: 15px;
-    background-color: #333;
+    border-radius: 8px;
+    background-color: #5d5d5d;
     margin: 0px;
     padding: 10px;
     transition: 0.3s ease-in-out;
-    width: 100%
 }
 .project-link-icon{
-    color: white;
+    font-size:smaller;
     text-align: center;
     justify-content: start;
     margin: 10px;
+    display: inline-block;
 }
 
 .project-link-icon:hover{
@@ -53,15 +58,14 @@ h1 {
     .container {
         grid-template-columns: 1fr;
     }
-
-    .project-header{
-        width:200px 
-    }
 }
 
 @media screen and (min-width: 700px) and (max-width:100%){ 
     .container {
         grid-template-columns: 1fr 1fr;
         width: 100%
+    }
+    .project-card {
+        height: 500px;
     }
 }
